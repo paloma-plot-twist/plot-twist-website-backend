@@ -14,26 +14,22 @@ const Footer = () => {
             </div>
 
             <div>
-              <h4 className="font-bold mb-4">Services</h4>
+              <h4 className="font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-secondary-foreground/80">
-                <li>Content Marketing</li>
-                <li>Video Production</li>
-                <li>Social Media Marketing</li>
-                <li>Influencer Marketing</li>
-                <li>Performance Marketing</li>
-                <li>Thought Leadership</li>
+                <li><a href="#portfolio" className="hover:text-primary transition-colors">Our Work</a></li>
+                <li><a href="#services" className="hover:text-primary transition-colors">Services</a></li>
+                <li><a href="#about" className="hover:text-primary transition-colors">About Us</a></li>
+                <li><a href="#contact" className="hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Brand Resources</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold mb-4">Industries</h4>
+              <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2 text-secondary-foreground/80">
-                <li>FinTech & BFSI</li>
-                <li>Real Estate</li>
-                <li>Lifestyle & Retail</li>
-                <li>Wellness & Beauty</li>
-                <li>FMCG</li>
-                <li>Pet Care & Tech</li>
+                <li>Email: hello@plottwist.agency</li>
+                <li>Phone: +91 [Number]</li>
               </ul>
             </div>
           </div>

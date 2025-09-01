@@ -18,10 +18,10 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-              Ready for Your Plot Twist?
+              How We Can Help
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Let's create something extraordinary together. We're looking for partners who are as committed to excellence as we are.
+              We love to work with bold, process-driven brands that value originality and results. If that sounds like you, let's talk about turning spectators into fans.
             </p>
           </div>
 
@@ -60,6 +60,16 @@ const Contact = () => {
                     <div>
                       <p className="font-medium">Email</p>
                       <p className="text-muted-foreground">hello@plottwist.agency</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                      <Phone className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-medium">Phone</p>
+                      <p className="text-muted-foreground">+91 [Number]</p>
                     </div>
                   </div>
 

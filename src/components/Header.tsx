@@ -6,10 +6,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Services", href: "#services" },
-    { name: "About", href: "#about" },
-    { name: "Work", href: "#work" },
-    { name: "Contact", href: "#contact" },
+    { name: "Who We Are", href: "#about" },
+    { name: "What We Do", href: "#services" },
+    { name: "How We Do It", href: "#process" },
+    { name: "Need Help?", href: "#contact" },
   ];
 
   return (
@@ -33,7 +33,7 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <Button>Let's Talk</Button>
+            <Button>Explore - Book Call</Button>
           </div>
 
           {/* Mobile menu button */}
@@ -63,7 +63,7 @@ const Header = () => {
                 </a>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full">Let's Talk</Button>
+                <Button className="w-full">Explore - Book Call</Button>
               </div>
             </div>
           </div>
