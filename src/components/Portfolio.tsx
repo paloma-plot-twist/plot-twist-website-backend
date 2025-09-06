@@ -9,10 +9,10 @@ const Portfolio = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Brands We've Transformed
+            Brands on Our Portfolio
           </h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            From startups to global giants, we've helped brands across industries find their voice and amplify their impact.
+            From startups to global giants, our team has worked with brands across industries to find their voice and amplify their impact.
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
