@@ -5,7 +5,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-16">
+    <section id="portfolio" className="py-16 pt-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
