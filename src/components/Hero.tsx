@@ -61,9 +61,10 @@ const Hero = () => {
             <div className="lg:col-span-3 text-left">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-[0.9]">
                 Ready for a{" "}
-                <span className="text-primary relative">
+                <span className="text-primary relative whitespace-nowrap">
                   plot twist
-                  <div className="absolute -inset-2 gradient-primary opacity-10 blur-xl"></div>
+                  <div className="absolute -inset-2 bg-red-500/20 blur-xl"></div>
+                  <div className="absolute -inset-1 bg-red-400/10 blur-lg"></div>
                 </span>{" "}
                 in your brand's story?
               </h1>

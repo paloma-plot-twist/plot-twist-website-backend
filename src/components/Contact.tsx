@@ -65,8 +65,14 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <Button size="lg" className="w-full text-lg py-6">
-                    Find Your Plot Twist Today
+                  <Button 
+                    size="lg" 
+                    className="w-full text-lg py-6"
+                    asChild
+                  >
+                    <a href="https://calendly.com/paloma-findyourplottwist/30min" target="_blank" rel="noopener noreferrer">
+                      Find Your Plot Twist Today
+                    </a>
                   </Button>
 
                   <p className="text-sm text-muted-foreground text-center">

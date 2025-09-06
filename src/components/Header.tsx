@@ -33,7 +33,11 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <Button>Explore</Button>
+            <Button asChild>
+              <a href="https://calendly.com/paloma-findyourplottwist/30min" target="_blank" rel="noopener noreferrer">
+                Explore
+              </a>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -63,7 +67,11 @@ const Header = () => {
                 </a>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full">Explore</Button>
+                <Button className="w-full" asChild>
+                  <a href="https://calendly.com/paloma-findyourplottwist/30min" target="_blank" rel="noopener noreferrer">
+                    Explore
+                  </a>
+                </Button>
               </div>
             </div>
           </div>

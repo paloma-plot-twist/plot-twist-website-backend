@@ -24,9 +24,12 @@ const CTA = () => {
           <Button 
             size="lg" 
             className="text-xl px-12 py-8 bg-white text-primary hover:bg-white/90 shadow-glow hover:shadow-elegant transition-smooth border-0 h-auto"
+            asChild
           >
-            Find Your Plot Twist Today
-            <ArrowRight className="ml-3 h-6 w-6" />
+            <a href="https://calendly.com/paloma-findyourplottwist/30min" target="_blank" rel="noopener noreferrer">
+              Find Your Plot Twist Today
+              <ArrowRight className="ml-3 h-6 w-6" />
+            </a>
           </Button>
         </div>
       </div>
