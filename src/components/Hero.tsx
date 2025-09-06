@@ -95,8 +95,8 @@ const Hero = () => {
               <Card className="border-0 shadow-elegant backdrop-blur-sm bg-card/90">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-6 text-center leading-tight">
-                    Drop your deets and<br />
-                    let's get plotting
+                    Drop your deets<br />
+                    and let's get plotting
                   </h3>
                   <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
