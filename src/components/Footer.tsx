@@ -9,7 +9,7 @@ const Footer = () => {
                 plot<span className="text-primary">.</span>twist
               </h3>
               <p className="text-secondary-foreground/80 max-w-md leading-relaxed">
-                APAC's most reliable creative marketing agency. We're the plot twist in your brand's story—turning consumers into loyal fans through wit, wisdom, and proven execution.
+                We're the plot twist in your brand's story—turning consumers into loyal fans through wit, wisdom, and proven execution.
               </p>
             </div>
 
@@ -40,7 +40,7 @@ const Footer = () => {
                 © 2024 Plot Twist. All rights reserved.
               </p>
               <p className="text-secondary-foreground/60 text-sm mt-4 md:mt-0">
-                Your marketing bestie who gets shit done. ✨
+                Got a marketing problem? You know who to call.
               </p>
             </div>
           </div>

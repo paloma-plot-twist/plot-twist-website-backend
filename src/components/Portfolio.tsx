@@ -24,7 +24,7 @@ const Portfolio = () => {
           </div>
           
           <p className="text-muted-foreground">
-            More portfolio samples coming soon. Let's add your brand to this list.
+            Let's add your brand to this list.
           </p>
         </div>
       </div>

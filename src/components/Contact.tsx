@@ -13,7 +13,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-16">
+    <section id="contact" className="py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -70,7 +70,7 @@ const Contact = () => {
                   </Button>
 
                   <p className="text-sm text-muted-foreground text-center">
-                    Let's get shit done.
+                    Let's get sh* done.
                   </p>
                 </CardContent>
               </Card>
