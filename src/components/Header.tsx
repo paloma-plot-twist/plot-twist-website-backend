@@ -33,7 +33,7 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <Button>Explore - Book Call</Button>
+            <Button>Explore</Button>
           </div>
 
           {/* Mobile menu button */}
@@ -63,7 +63,7 @@ const Header = () => {
                 </a>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full">Explore - Book Call</Button>
+                <Button className="w-full">Explore</Button>
               </div>
             </div>
           </div>

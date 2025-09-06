@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   return (
-    <section id="about" className="py-32 relative overflow-hidden">
+    <section id="about" className="py-16 relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
@@ -23,9 +23,9 @@ const About = () => {
                 We turn cultural moments into business momentum, delivering campaigns that disrupt the mundane and drive real growth.
               </p>
               <div className="flex flex-wrap justify-center gap-2 text-lg font-medium">
-                <span className="px-4 py-2 bg-primary/10 rounded-full">Fresh perspectives</span>
-                <span className="px-4 py-2 bg-primary/10 rounded-full">Proven execution</span>  
-                <span className="px-4 py-2 bg-primary/10 rounded-full">Measurable impact</span>
+                <span className="px-4 py-2 bg-primary text-primary-foreground rounded-full">Fresh perspectives</span>
+                <span className="px-4 py-2 bg-primary text-primary-foreground rounded-full">Proven execution</span>  
+                <span className="px-4 py-2 bg-primary text-primary-foreground rounded-full">Measurable impact</span>
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@ const About = () => {
             {[
               {
                 title: "Innovation",
-                description: "We're not here to reheat yesterday's ideas. Every solution we create is built from scratch to solve your specific challenge.",
+                description: "We're not here to reheat yesterday's ideas. Every solution we create is built from scratch to solve your challenge.",
                 icon: "💡"
               },
               {

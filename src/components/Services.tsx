@@ -7,7 +7,7 @@ const Services = () => {
       title: "Brand & Content",
       description: "Stories that resonate, content that converts",
       services: [
-        "Content marketing that actually connects",
+        "Content marketing that connects",
         "Social media strategy with cultural edge", 
         "Campaign concepts that break through the noise",
         "Brand narratives that stick"
@@ -39,7 +39,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-32 relative">
+    <section id="services" className="py-16 relative">
       <div className="absolute inset-0 gradient-subtle opacity-30"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">

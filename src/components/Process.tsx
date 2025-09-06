@@ -31,7 +31,7 @@ const Process = () => {
   ];
 
   return (
-    <section id="process" className="py-20 bg-muted/30">
+    <section id="process" className="py-16 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -59,15 +59,6 @@ const Process = () => {
             ))}
           </div>
 
-          <Card className="border-0 bg-primary/5">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold mb-6">Our Work Approach</h3>
-              <p className="text-muted-foreground leading-relaxed max-w-4xl mx-auto text-lg">
-                We believe in bringing decision-makers to the table, honoring timelines, and valuing both creativity and reliability. 
-                If you can explain your business problem to us and you're open to expert recommendations, we'll work magic together.
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

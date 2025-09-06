@@ -25,7 +25,7 @@ const CTA = () => {
             size="lg" 
             className="text-xl px-12 py-8 bg-white text-primary hover:bg-white/90 shadow-glow hover:shadow-elegant transition-smooth border-0 h-auto"
           >
-            Start Your Plot Twist Today
+            Find Your Plot Twist Today
             <ArrowRight className="ml-3 h-6 w-6" />
           </Button>
         </div>

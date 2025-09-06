@@ -28,8 +28,8 @@ const Footer = () => {
             <div>
               <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2 text-secondary-foreground/80">
-                <li>Email: hello@plottwist.agency</li>
-                <li>Phone: +91 [Number]</li>
+                <li>Email: hello@findyourplottwist.com</li>
+                <li>Offices: Mumbai and New Delhi</li>
               </ul>
             </div>
           </div>

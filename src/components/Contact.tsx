@@ -37,14 +37,6 @@ const Contact = () => {
                 ))}
               </ul>
 
-              <Card className="border-0 bg-primary/5">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold mb-4 text-foreground">Our Promise</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    We are the marketing experts you can trust to carry out whatever challenge you bring us. No matter what, we deliver on promises—not just pretty presentations.
-                  </p>
-                </CardContent>
-              </Card>
             </div>
 
             <div>
@@ -59,17 +51,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-muted-foreground">hello@plottwist.agency</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                      <Phone className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium">Phone</p>
-                      <p className="text-muted-foreground">+91 [Number]</p>
+                      <p className="text-muted-foreground">hello@findyourplottwist.com</p>
                     </div>
                   </div>
 
@@ -79,16 +61,16 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium">Location</p>
-                      <p className="text-muted-foreground">India & APAC</p>
+                      <p className="text-muted-foreground">Mumbai and New Delhi</p>
                     </div>
                   </div>
 
                   <Button size="lg" className="w-full text-lg py-6">
-                    Start Your Plot Twist Today
+                    Find Your Plot Twist Today
                   </Button>
 
                   <p className="text-sm text-muted-foreground text-center">
-                    Response within 24 hours. Let's get shit done.
+                    Let's get shit done.
                   </p>
                 </CardContent>
               </Card>

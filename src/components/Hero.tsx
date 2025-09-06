@@ -14,7 +14,6 @@ const formSchema = z.object({
   company: z.string().min(2, "Company name is required"),
   role: z.string().min(2, "Your role is required"),
   email: z.string().email("Please enter a valid email address"),
-  timeline: z.string().min(2, "Please specify your timeline"),
 });
 
 const Hero = () => {
@@ -28,7 +27,6 @@ const Hero = () => {
       company: "",
       role: "",
       email: "",
-      timeline: "",
     },
   });
 
@@ -46,7 +44,7 @@ const Hero = () => {
     } catch (error) {
       toast({
         title: "Oops! Something went wrong",
-        description: "Please try again or email us directly at hello@plottwist.agency",
+        description: "Please try again or email us directly at hello@findyourplottwist.com",
         variant: "destructive",
       });
     }
@@ -56,9 +54,9 @@ const Hero = () => {
       {/* Background gradient */}
       <div className="absolute inset-0 gradient-subtle opacity-50"></div>
       
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-end">
             {/* Content - Takes up more space */}
             <div className="lg:col-span-3 text-left">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-[0.9]">
@@ -165,26 +163,13 @@ const Hero = () => {
                         )}
                       />
                       
-                      <FormField
-                        control={form.control}
-                        name="timeline"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormControl>
-                              <Input placeholder="What's the timeline for getting your project started?" className="h-12 border-0 bg-muted/50" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      
-                      <Button 
+                      <Button
                         type="submit" 
                         size="lg" 
                         className="w-full text-lg h-14 gradient-primary border-0 shadow-glow hover:shadow-elegant transition-smooth"
                         disabled={form.formState.isSubmitting}
                       >
-                        {form.formState.isSubmitting ? "Plotting..." : "Start Your Plot Twist"}
+                        {form.formState.isSubmitting ? "Plotting..." : "Find Your Plot Twist"}
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </form>
