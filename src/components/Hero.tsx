@@ -15,7 +15,6 @@ const formSchema = z.object({
   company: z.string().min(2, "Company name is required"),
   role: z.string().min(2, "Your role is required"),
   email: z.string().email("Please enter a valid email address"),
-  spreadsheetId: z.string().min(10, "Google Sheets ID is required"),
 });
 
 const Hero = () => {
@@ -29,7 +28,6 @@ const Hero = () => {
       company: "",
       role: "",
       email: "",
-      spreadsheetId: "",
     },
   });
 
@@ -38,7 +36,10 @@ const Hero = () => {
       console.log("Submitting form to Google Sheets:", values);
       
       const { data, error } = await supabase.functions.invoke('submit-to-sheets', {
-        body: values,
+        body: {
+          ...values,
+          spreadsheetId: "108aGxMzenBFmHlf-MtRqvJTaKf33rrAu2uD3SPSDSuE"
+        },
       });
 
       if (error) {
@@ -178,18 +179,6 @@ const Hero = () => {
                         )}
                       />
                       
-                      <FormField
-                        control={form.control}
-                        name="spreadsheetId"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormControl>
-                              <Input placeholder="Google Sheets ID (from the URL)" className="h-12 border-0 bg-muted/50" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
                       
                       <Button
                         type="submit" 
