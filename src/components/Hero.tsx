@@ -15,6 +15,7 @@ const formSchema = z.object({
   company: z.string().min(2, "Company name is required"),
   role: z.string().min(2, "Your role is required"),
   email: z.string().email("Please enter a valid email address"),
+  spreadsheetId: z.string().min(10, "Google Sheets ID is required"),
 });
 
 const Hero = () => {
@@ -28,14 +29,15 @@ const Hero = () => {
       company: "",
       role: "",
       email: "",
+      spreadsheetId: "",
     },
   });
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      console.log("Submitting form:", values);
+      console.log("Submitting form to Google Sheets:", values);
       
-      const { data, error } = await supabase.functions.invoke('submit-lead', {
+      const { data, error } = await supabase.functions.invoke('submit-to-sheets', {
         body: values,
       });
 
@@ -44,11 +46,11 @@ const Hero = () => {
         throw new Error(error.message || "Failed to submit form");
       }
 
-      console.log("Form submitted successfully:", data);
+      console.log("Form submitted successfully to Google Sheets:", data);
       
       toast({
         title: "Success! 🎬",
-        description: "We'll be in touch within 24 hours to start plotting your twist.",
+        description: "Your details have been saved to Google Sheets. We'll be in touch within 24 hours!",
       });
       
       form.reset();
@@ -170,6 +172,19 @@ const Hero = () => {
                           <FormItem>
                             <FormControl>
                               <Input placeholder="How can we contact you? (Email)" type="email" className="h-12 border-0 bg-muted/50" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      
+                      <FormField
+                        control={form.control}
+                        name="spreadsheetId"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormControl>
+                              <Input placeholder="Google Sheets ID (from the URL)" className="h-12 border-0 bg-muted/50" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>

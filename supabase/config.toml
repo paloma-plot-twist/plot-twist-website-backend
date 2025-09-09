@@ -2,3 +2,6 @@ project_id = "tiyntcjumvwalugktfdd"
 
 [functions.submit-lead]
 verify_jwt = false
+
+[functions.submit-to-sheets]
+verify_jwt = false
