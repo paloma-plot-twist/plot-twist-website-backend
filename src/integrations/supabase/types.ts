@@ -14,6 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
+      customer_leads: {
+        Row: {
+          challenge: string | null
+          company: string | null
+          created_at: string
+          email: string
+          id: string
+          name: string
+          role: string | null
+          submitted_at: string
+          updated_at: string
+        }
+        Insert: {
+          challenge?: string | null
+          company?: string | null
+          created_at?: string
+          email: string
+          id?: string
+          name: string
+          role?: string | null
+          submitted_at?: string
+          updated_at?: string
+        }
+        Update: {
+          challenge?: string | null
+          company?: string | null
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string
+          role?: string | null
+          submitted_at?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       email_submissions: {
         Row: {
           email: string
