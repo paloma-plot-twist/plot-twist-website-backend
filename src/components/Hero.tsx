@@ -6,6 +6,7 @@ import { useToast } from "@/hooks/use-toast";
 import { ArrowRight } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { supabase } from "@/integrations/supabase/client";
 import * as z from "zod";
 
 const formSchema = z.object({
@@ -32,8 +33,18 @@ const Hero = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      // Here you would typically send the data to your backend
-      console.log("Form submitted:", values);
+      console.log("Submitting form:", values);
+      
+      const { data, error } = await supabase.functions.invoke('submit-lead', {
+        body: values,
+      });
+
+      if (error) {
+        console.error("Edge function error:", error);
+        throw new Error(error.message || "Failed to submit form");
+      }
+
+      console.log("Form submitted successfully:", data);
       
       toast({
         title: "Success! 🎬",
@@ -41,7 +52,8 @@ const Hero = () => {
       });
       
       form.reset();
-    } catch (error) {
+    } catch (error: any) {
+      console.error("Form submission error:", error);
       toast({
         title: "Oops! Something went wrong",
         description: "Please try again or email us directly at hello@findyourplottwist.com",
